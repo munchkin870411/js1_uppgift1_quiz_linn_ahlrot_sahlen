@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Quiz</h1>
+    <div id="app">
+      <section id="start-screen" aria-label="Starta quiz">
+        <form id="name-form" novalidate>
+          <label for="name-input">Ditt namn</label>
+          <input type="text" id="name-input" aria-describedby="name-error">
+          <p id="name-error" class="feedback-wrong" role="alert"></p>
+          <button type="submit">Starta quiz</button>
+        </form>
+        <p id="last-result" class="progress" hidden></p>
+      </section>
+
+      <section id="quiz-screen" aria-label="Quizfråga" hidden>
+        <p id="player-info" class="player-info"></p>
+        <p id="progress" class="progress"></p>
+        <p id="question" class="question"></p>
+        <div id="answers"></div>
+        <p id="feedback" aria-live="polite"></p>
+        <button id="next-button" class="action" type="button" hidden>Nästa</button>
+      </section>
+
+      <section id="result-screen" aria-label="Resultat" hidden>
+        <p id="result" class="result"></p>
+        <div id="wrong-answers" hidden>
+          <p class="question">Du svarade fel på:</p>
+          <ul id="wrong-answers-list"></ul>
+        </div>
+        <button id="restart-button" class="action" type="button">Spela igen</button>
+      </section>
+    </div>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
