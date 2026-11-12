@@ -3,7 +3,7 @@ export const state = {
   nameError: "",
   currentIndex: 0,
   score: 0,
-  selectedAnswer: null, 
+  selectedAnswer: null,
   wrongAnswers: []
 };
 

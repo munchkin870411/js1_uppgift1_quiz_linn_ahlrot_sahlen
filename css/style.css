@@ -57,9 +57,8 @@ input {
 .wrong { background: #f5b5b5; border-color: #9d0208; }
 .feedback-correct { color: #2d6a4f; font-weight: bold; }
 .feedback-wrong { color: #9d0208; font-weight: bold; }
-.wrong-item { border-left: 4px solid #9d0208; padding-left: 0.5rem; }
+.wrong-item { border-left: 4px solid #9d0208; padding-left: 0.5rem; margin: 1rem 0; }
 #wrong-answers-list { list-style: none; padding: 0; }
-.wrong-item { margin: 1rem 0; }
 .result { font-size: 1.3rem; font-weight: bold; }
 
 .player-info {
