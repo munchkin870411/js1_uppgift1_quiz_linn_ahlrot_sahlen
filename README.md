@@ -28,9 +28,9 @@ npx serve
 
 ## Filer
 - `index.html` – sidans struktur
-- `css/style.css` – utseende (mobile first)
-- `js/main.js` – logik och rendering
-- `js/state.js` – quizets tillstånd
-- `js/questions.js` – frågorna
-- `js/storage.js` – sparar och läser senaste resultatet
-- `js/elements.js` – skapar svarsknapparna
+- `styles/style.css` – utseende (mobile first)
+- `scripts/main.js` – logik och rendering
+- `scripts/state.js` – quizets tillstånd
+- `scripts/questions.js` – frågorna
+- `scripts/storage.js` – sparar och läser senaste resultatet
+- `scripts/elements.js` – skapar svarsknapparna
