@@ -64,11 +64,6 @@ function handleRestart() {
 function renderStart() {
   nameError.textContent = state.nameError;
   nameInput.setAttribute("aria-invalid", state.nameError ? "true" : "false");
-  const last = loadResult();
-  lastResult.hidden = !last;
-  lastResult.textContent = last
-    ? `Senaste resultat: ${last.name} fick ${last.score} av ${last.total} rätt`
-    : "";
   nameInput.focus();
 }
 
@@ -131,6 +126,12 @@ function render() {
   startScreen.hidden = !isStart;
   quizScreen.hidden = isStart || isResult;
   resultScreen.hidden = !isResult;
+
+  const last = loadResult();
+  lastResult.hidden = isResult || !last;
+  lastResult.textContent = last
+    ? `Senaste resultat: ${last.name} fick ${last.score} av ${last.total} rätt`
+    : "";
 
   if (isStart) {
     renderStart();
